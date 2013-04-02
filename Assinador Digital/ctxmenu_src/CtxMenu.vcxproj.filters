@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{37d45cb2-9717-4bfd-983b-fb5bb9db74be}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{827e304b-95bf-491f-9bcb-07a1ef78efbd}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{487fba59-cd4c-45d6-9830-6dc111d6261d}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CancelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CtxMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellCtxMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellExt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellExtReg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CtxMenu.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="icones\adicionar copy.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ani_2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ani_2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ani_3.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ani_3.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ani_4.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ani_4.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ani_5.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ani_5.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ani_6.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ani_6.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ani_7.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ani_7.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ani_8.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ani_8.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ani_9.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ani_9.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ctx_icon_white copy.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CtxMenu.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ico00002.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icone13x13.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="menu_bmp.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icones\negado copy.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icones\negado.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icones\ok copy grande.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icones\ok copy.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icones\ok.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ctx_icon.png" />
+    <None Include="ctx_icon_white.png" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CtxMenu.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CancelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CtxMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Priv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellExt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,261 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95B94142-191A-4C5C-9817-6E017A342465}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssinadorDigital</RootNamespace>
+    <AssemblyName>AssinadorDigital</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ManifestCertificateThumbprint>3D597F1090164AFDFD54B39C853FDA858D44C449</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <ApplicationIcon>Resources\icone.ico</ApplicationIcon>
+    <PublishUrl>http://localhost/AssinadorDigital/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\ctxmenu_src\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\ctxmenu_src\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.DocumentFormat.OpenXml, Version=1.0.531.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.Office.DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddSignature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddSignature.designer.cs">
+      <DependentUpon>FormAddSignature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRemoveSignatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRemoveSignatures.Designer.cs">
+      <DependentUpon>FormRemoveSignatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIncludeSubFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIncludeSubFolders.Designer.cs">
+      <DependentUpon>FormIncludeSubFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSignatureDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSignatureDetails.Designer.cs">
+      <DependentUpon>FormSignatureDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewSignatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewSignatures.Designer.cs">
+      <DependentUpon>FormViewSignatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectSignaturesToRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectSignaturesToRemove.Designer.cs">
+      <DependentUpon>FormSelectSignaturesToRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageSignatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageSignatures.Designer.cs">
+      <DependentUpon>FormManageSignatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddSignature.resx">
+      <DependentUpon>FormAddSignature.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRemoveSignatures.resx">
+      <DependentUpon>FormRemoveSignatures.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIncludeSubFolders.resx">
+      <DependentUpon>FormIncludeSubFolders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSignatureDetails.resx">
+      <DependentUpon>FormSignatureDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewSignatures.resx">
+      <DependentUpon>FormViewSignatures.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectSignaturesToRemove.resx">
+      <DependentUpon>FormSelectSignaturesToRemove.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageSignatures.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormManageSignatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VerifyCRL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalSignature\OPC.csproj">
+      <Project>{DDAED572-6412-4E05-BCAB-0AC23D2A3180}</Project>
+      <Name>OPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileUtils\FileUtils.csproj">
+      <Project>{DBBFDB76-6E9B-448E-AF0C-FACAA51817A7}</Project>
+      <Name>FileUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OfficeObject.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faixa_installer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AssinadorDigital_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visualizar.1920.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Resources\remover.1920.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\banner_assinador.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
