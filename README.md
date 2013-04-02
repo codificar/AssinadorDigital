@@ -1,4 +1,4 @@
 AssinadorDigital
 ================
 
-Gerencia de Assinaturas Digitais em Documentos Office e PDF.
+Gerenciador de Assinaturas Digitais em Documentos Office e PDF.
